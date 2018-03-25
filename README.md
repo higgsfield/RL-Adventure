@@ -30,6 +30,6 @@ At the very begining I recommend to use small test problems to run experiments q
 - Carefully go through the paper. Try to see what is the problem that authors are solving. First you should understand a high-level idea of the approach, then you can read the code skipping the proofs, and after that go over the mathematical details and proofs.
 
 # Best RL courses
-- David Silver's course [link](http://rll.berkeley.edu/deeprlcourse/)
+- David Silver's course [link](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 - Berkeley deep RL [link](http://rll.berkeley.edu/deeprlcourse/)
 - Practical RL [link](https://github.com/yandexdataschool/Practical_RL)
