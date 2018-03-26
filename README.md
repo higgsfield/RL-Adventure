@@ -19,7 +19,7 @@ The deep reinforcement learning community has made several independent improveme
   10. Neural Episodic Control [[arxiv]](https://arxiv.org/pdf/1703.01988.pdf) [[code]](#)
 
 # Environments
-At the very begining I recommend to use small test problems to run experiments quickly. Then you can continue on environmnets with large observation space. 
+First, I recommend to use small test problems to run experiments quickly. Then, you can continue on environments with large observation space. 
 
   - **CartPole** - classic RL environment that can be solved even on a single cpu
   - **Atari Pong** - the easiest atari environment, it takes ~ 1 million frames to converge, comparing with other atari games that take > 40 millions
