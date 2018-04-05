@@ -21,13 +21,13 @@ The deep reinforcement learning community has made several independent improveme
 # Environments
 First, I recommend to use small test problems to run experiments quickly. Then, you can continue on environments with large observation space. 
 
-  - **CartPole** - classic RL environment that can be solved even on a single cpu
-  - **Atari Pong** - the easiest atari environment, it takes ~ 1 million frames to converge, comparing with other atari games that take > 40 millions
+  - **CartPole** - classic RL environment can be solved on a single cpu
+  - **Atari Pong** - the easiest atari environment, only takes ~ 1 million frames to converge, comparing with other atari games that take > 40 millions
   - **Atari others** - change hyperparameters, target network update frequency=10K, replay buffer size=1M
 
 # If you get stuck… 
-- First, remember that you are not stuck unless you have spent more than a week on a single algorithm. It is perfectly normal if you do not have all the required knowledge of mathematics and CS. For example, you will need knowledge of the fundamentals of measure theory and statistics, especially the [Wasserstein metric](https://en.wikipedia.org/wiki/Wasserstein_metric) and [quantile regression](https://en.wikipedia.org/wiki/Quantile_regression). Statistical inference: [ importance sampling](https://en.wikipedia.org/wiki/Importance_sampling). Data structures: [Segment Tree](https://leetcode.com/tag/segment-tree/) and [K-dimensional Tree](https://en.wikipedia.org/wiki/K-d_tree).
-- Carefully go through the paper. Try to see what is the problem that authors are solving. First you should understand a high-level idea of the approach, then you can read the code skipping the proofs, and after that go over the mathematical details and proofs.
+- Remember you are not stuck unless you have spent more than a week on a single algorithm. It is perfectly normal if you do not have all the required knowledge of mathematics and CS. For example, you will need knowledge of the fundamentals of measure theory and statistics, especially the [Wasserstein metric](https://en.wikipedia.org/wiki/Wasserstein_metric) and [quantile regression](https://en.wikipedia.org/wiki/Quantile_regression). Statistical inference: [importance sampling](https://en.wikipedia.org/wiki/Importance_sampling). Data structures: [Segment Tree](https://leetcode.com/tag/segment-tree/) and [K-dimensional Tree](https://en.wikipedia.org/wiki/K-d_tree).
+- Carefully go through the paper. Try to see what is the problem the authors are solving. Understand a high-level idea of the approach, then read the code (skipping the proofs), and after go over the mathematical details and proofs.
 
 # Best RL courses
 - David Silver's course [link](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
