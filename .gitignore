@@ -1,0 +1,7 @@
+*/model
+*/var
+*.pyc
+*.swp
+*.swo
+*/*.swp
+*/*.swo
