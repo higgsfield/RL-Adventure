@@ -17,3 +17,4 @@ class Config(object):
     Q_ENTROPY_THRESHOLD = 0.7
     MODEL_DIR      =    "model"
     VAR_DIR        =    "var"
+    INITIALIZER    =    "Xavier"
