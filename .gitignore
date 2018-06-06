@@ -1,0 +1,9 @@
+*/model
+*/var
+*.pyc
+*.swp
+*.swo
+*/*.swp
+*/*.swo
+*/.ipynb_checkpoint/*
+common/__pycache__/*
