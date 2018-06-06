@@ -1,12 +1,7 @@
 #!/usr/bin/python
 import torch
 import os
-import numpy as np
 import pickle
-
-def entropy(p):
-    p1 = np.exp(p) / np.sum(np.exp(p))
-    return -sum(p1*np.log(p1))
 
 def save_model(model, model_dir, name):
     if not os.path.exists(model_dir): 
