@@ -6,3 +6,4 @@
 */*.swp
 */*.swo
 */.ipynb_checkpoint/*
+.ipynb_checkpoint/
