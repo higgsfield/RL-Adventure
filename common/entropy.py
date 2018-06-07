@@ -25,3 +25,8 @@ def compute_q_entropy(q_values):
 def nn_entropy(p):
     p_softmax = nn.Softmax()(p).data.cpu().numpy()[0]
     return -np.sum(p_softmax*np.log(p_softmax))
+
+
+def nn_log_entropy(p):
+    p_softmax = nn.LogSoftmax()(p).data.cpu().numpy()[0]
+    return -np.sum(p_softmax*np.log(p_softmax))
