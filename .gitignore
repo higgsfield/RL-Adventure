@@ -5,6 +5,7 @@
 *.swo
 */*.swp
 */*.swo
+*/*.swn
 */.ipynb_checkpoint/*
 <<<<<<< HEAD
 .ipynb_checkpoint/
