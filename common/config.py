@@ -5,8 +5,8 @@ class Config(object):
     REPLAY_INIT    =     10000 
     REPLAY_BUFFER  =     100000 
     EPSILON_START  =     1.0
-    EPSILON_FINAL  =     0.1
-    EPSILON_DECAY  =     150000 
+    EPSILON_FINAL  =     0.01
+    EPSILON_DECAY  =     30000 
     TAU_START      =     10.0
     TAU_FINAL      =     0.1
     TAU_DECAY      =     150000 

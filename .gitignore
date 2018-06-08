@@ -5,9 +5,5 @@
 *.swo
 */*.swp
 */*.swo
-*/.ipynb_checkpoint/*
-<<<<<<< HEAD
-.ipynb_checkpoint/
-=======
-common/__pycache__/*
->>>>>>> master
+*/.ipynb_checkpoints/*
+.ipynb_checkpoints/
