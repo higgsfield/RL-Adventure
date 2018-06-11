@@ -2,8 +2,8 @@ class Config(object):
     DIRS           =     ['epsilon', 'boltzmann', 'noisy', 'qEntropy']
     GAMES          =     ['Boxing-v0', 'ChopperCommand-v0', 'DemonAttack-v0', 'Tennis-v0']
     ## Hyperparameters
-    REPLAY_INIT    =     10000 
-    REPLAY_BUFFER  =     100000 
+    REPLAY_INIT    =     50000 
+    REPLAY_BUFFER  =     1000000 
     EPSILON_START  =     1.0
     EPSILON_FINAL  =     0.1
     EPSILON_DECAY  =     1000000 
@@ -13,7 +13,7 @@ class Config(object):
     NUM_FRAMES     =     5000000
     BATCH_SIZE     =     32
     GAMMA          =     0.99
-    LEARNING_RATE  =     1e-4
+    LEARNING_RATE  =     0.00025
     Q_ENTROPY_THRESHOLD = 0.7
     MODEL_DIR      =    "model"
     VAR_DIR        =    "var"
