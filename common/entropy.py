@@ -3,8 +3,6 @@ import torch
 import torch.nn as nn
 import torch.autograd as autograd 
 
-
-
 def entropy(p):
     p1 = np.exp(p) / np.sum(np.exp(p))
     return -sum(p1*np.log(p1))
