@@ -17,3 +17,11 @@ def save_variable(name, var_dir, var_dict):
 
     with open(file_name, 'wb') as f:
         pickle.dump(var_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+def load_model(model_dir, name):
+    file_name = os.path.join(model_dir, name+'.model')
+    if not os.path.exists(file_name):
+      raise IOError
+
+    model = torch.load(file_name)
+    return model
