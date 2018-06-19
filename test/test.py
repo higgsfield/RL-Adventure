@@ -7,7 +7,9 @@ import os
 import gym
 import random
 import numpy as np
+import sys
 
+sys.path.append('../')
 from common.wrappers import make_atari, wrap_deepmind, wrap_pytorch
 from common.save_file import *
 
@@ -57,14 +59,14 @@ class CnnDQN(nn.Module):
 
 
 env_id  = "DemonAttack-v0"
-DIR     = "qEntropy"
+DIR     = "../boltzmann"
 EPISODE = 500
 env     = make_atari(env_id)
 env     = wrap_deepmind(env, clip_rewards=False)
 env     = wrap_pytorch(env)
 
 model_dir = os.path.join(DIR, "model")
-model_name = DIR + "_" + env_id
+model_name = 'boltzmann' + "_" + env_id
 
 model = load_model(model_dir, model_name)
 if USE_CUDA:
