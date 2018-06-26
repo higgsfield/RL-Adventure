@@ -13,8 +13,10 @@ def compute_q_entropy(q_values):
     for i in range(len(q_values)):
         q_entropy = []
         for j in range(len(q_values[i])):
-            qval =autograd.Variable(torch.Tensor(q_values[i][j]))
-            q_entropy.append(nn_entropy(qval))
+            #qval =autograd.Variable(torch.Tensor(q_values[i][j]))
+            #q_entropy.append(nn_entropy(qval))
+            max_qe = np.log(q_values[0][0].shape[0])
+            q_entropy.append(entropy(q_values[i][j])/max_qe*100)
         q_entropy_traj.append(q_entropy)
     
     return q_entropy_traj
