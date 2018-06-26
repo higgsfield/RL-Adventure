@@ -41,6 +41,7 @@ class CnnDQN(nn.Module):
     )
 
   def forward(self, x):
+    x /= 255.0
     x = self.features(x)
     x = x.view(x.size(0), -1)
     x = self.fc(x)
@@ -59,14 +60,14 @@ class CnnDQN(nn.Module):
 
 
 env_id  = "DemonAttack-v0"
-DIR     = "../boltzmann"
+DIR     = "../epsilon"
 EPISODE = 500
 env     = make_atari(env_id)
-env     = wrap_deepmind(env, clip_rewards=False)
+env     = wrap_deepmind(env, clip_rewards=True)
 env     = wrap_pytorch(env)
 
 model_dir = os.path.join(DIR, "model")
-model_name = 'boltzmann' + "_" + env_id
+model_name = 'epsilon' + "_" + env_id
 
 model = load_model(model_dir, model_name)
 if USE_CUDA:
