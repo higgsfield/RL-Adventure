@@ -60,14 +60,22 @@ class CnnDQN(nn.Module):
 
 
 env_id  = "DemonAttack-v0"
+<<<<<<< HEAD
 DIR     = "../epsilon"
+=======
+DIR     = "../boltzmann"
+>>>>>>> master
 EPISODE = 500
 env     = make_atari(env_id)
 env     = wrap_deepmind(env, clip_rewards=True)
 env     = wrap_pytorch(env)
 
 model_dir = os.path.join(DIR, "model")
+<<<<<<< HEAD
 model_name = 'epsilon' + "_" + env_id
+=======
+model_name = 'boltzmann' + "_" + env_id
+>>>>>>> master
 
 model = load_model(model_dir, model_name)
 if USE_CUDA:
