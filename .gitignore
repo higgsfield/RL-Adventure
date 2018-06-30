@@ -1,0 +1,9 @@
+*/var
+*.pyc
+*.swp
+*.swo
+*/*.swp
+*/*.swo
+.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
+common/__pycache__/*.pyc
